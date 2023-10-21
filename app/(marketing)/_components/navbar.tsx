@@ -26,22 +26,25 @@ export const Navbar = () => {
       <div className="hidden md:flex justify-between items-center flex-grow"> {/* Use justify-between */}
         {isLoading && <Spinner />}
         {!isAuthenticated && !isLoading && (
-          <>
-            <Image
-              src={BigLogoBlack}
-              height="50"
-              width="200"
-              alt="Logo"
-              className="dark:hidden"
-            />
-            <Image
-              src={BigLogo}
-              height="50"
-              width="200"
-              alt="Logo"
-              className="hidden dark:block"
-            />
-            <div>
+          <div className="flex items-center justify-between w-full"> {/* Align items and justify to the right */}
+            <div className="flex items-center"> {/* Align items to the center */}
+              <Image
+                src={BigLogoBlack}
+                height="50"
+                width="200"
+                alt="Logo"
+                className="dark:hidden"
+              />
+              <Image
+                src={BigLogo}
+                height="50"
+                width="200"
+                alt="Logo"
+                className="hidden dark:block"
+              />
+            </div>
+            <div className="flex items-center space-x-4"> {/* Add spacing between elements */}
+              <ModeToggle />
               <SignInButton mode="modal">
                 <Button variant="ghost" size="sm">
                   Log in
@@ -52,20 +55,36 @@ export const Navbar = () => {
                   Get Minerva free
                 </Button>
               </SignInButton>
-              <ModeToggle />
-
             </div>
-          </>
+          </div>
         )}
         {isAuthenticated && !isLoading && (
-          <div>
-            <Button variant="ghost" size="sm" asChild>
-              <Link href="/documents">
-                Enter Minerva
-              </Link>
-            </Button>
-            <UserButton afterSignOutUrl="/" />
-            <ModeToggle />
+          <div className="flex items-center justify-between w-full"> {/* Align items and justify to the right */}
+            <div className="flex items-center"> {/* Align items to the center */}
+              <Image
+                src={BigLogoBlack}
+                height="50"
+                width="200"
+                alt="Logo"
+                className="dark:hidden"
+              />
+              <Image
+                src={BigLogo}
+                height="50"
+                width="200"
+                alt="Logo"
+                className="hidden dark:block"
+              />
+            </div>
+            <div className="flex items-center space-x-4"> {/* Add spacing between elements */}
+              <ModeToggle />
+              <Button variant="ghost" size="sm" asChild>
+                <Link href="/documents">
+                  Enter Minerva
+                </Link>
+              </Button>
+              <UserButton afterSignOutUrl="/" />
+            </div>
           </div>
         )}
       </div>
