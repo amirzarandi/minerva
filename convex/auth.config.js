@@ -1,7 +1,7 @@
 export default {
     providers: [
         {
-            domain: "https://massive-martin-79.clerk.accounts.dev",
+            domain: "https://mighty-orca-81.clerk.accounts.dev",
             applicationID: "convex"
         }
     ]
