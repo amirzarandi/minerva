@@ -21,6 +21,7 @@ import { UserItem } from "./user-item";
 import { Item } from "./item";
 import { useSearch } from "@/hooks/use-search";
 import { useSettings } from "@/hooks/use-settings";
+import { DocumentList } from "./document-list";
 
 export const Navigation = () => {
   const router = useRouter();
@@ -161,6 +162,7 @@ export const Navigation = () => {
             icon={PlusCircle}
           />
         <div className="mt-4">
+        <DocumentList />
         </div>
         <div
           onMouseDown={handleMouseDown}
