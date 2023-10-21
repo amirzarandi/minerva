@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        'custom': ['Glitten'],
+      },
       colors: {
         darkModeBg: "#1F1F1F",
         border: "hsl(var(--border))",

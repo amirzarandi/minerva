@@ -11,7 +11,7 @@ export const About = () => {
     return (
         <div className="snap-y snap-mandatory overflow-auto flex flex-col items-center justify-center md:justify-start text-center gap-y-8 flex-1 px-6 pb-10">
             <div className="snap-always snap-start max-w-3xl space-y-4">
-                <h1 className="dark:text-[#46c8ff] text-[#0468BF] text-3xl sm:text-5xl md:text-6xl font-medium">
+                <h1 className="tracking-wider dark:text-[#46c8ff] text-[#0468BF] text-3xl sm:text-5xl md:text-6xl font-medium font-custom">
                     <Typewriter
                         onInit={(typewriter) => {
                             typewriter
@@ -24,11 +24,11 @@ export const About = () => {
                     />
                 </h1>
 
-                <h1 className="text-2xl sm:text-4xl md:text-5xl font-normal">
+                <h1 className="text-2xl sm:text-4xl md:text-5xl font-light">
                     Your Ideas, Documents & Plans. Unified.
                 </h1>
 
-                <h3 className="text-base sm:text-xl md:text-2xl font-thin">
+                <h3 className="text-base sm:text-xl md:text-2xl font-light">
                     Minerva is the connected workspace where <br />
                     better, faster work happens.
                 </h3>
