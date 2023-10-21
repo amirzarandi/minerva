@@ -19,7 +19,7 @@ const InnovationCard: React.FC<InnovationCardProps> = ({
             </div>
             <div className="px-15">
                 <div>
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
+                    <h5 className="mb-2 text-2xl font-medium tracking-tight text-gray-900 dark:text-white text-center">
                         {title}
                     </h5>
                 </div>

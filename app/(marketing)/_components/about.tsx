@@ -11,7 +11,7 @@ export const About = () => {
     return (
         <div className="snap-y snap-mandatory overflow-auto flex flex-col items-center justify-center md:justify-start text-center gap-y-8 flex-1 px-6 pb-10">
             <div className="snap-always snap-start max-w-3xl space-y-4">
-                <h1 className="text-3xl sm:text-5xl md:text-6xl font-medium">
+                <h1 className="dark:text-[#46c8ff] text-[#0468BF] text-3xl sm:text-5xl md:text-6xl font-medium">
                     <Typewriter
                         onInit={(typewriter) => {
                             typewriter
@@ -32,7 +32,7 @@ export const About = () => {
                     Minerva is the connected workspace where <br />
                     better, faster work happens.
                 </h3>
-                <Button>
+                <Button >
                     Enter Minerva
                     <ArrowRight className="h-4 w-4 ml-2" />
                 </Button>
@@ -44,33 +44,28 @@ export const About = () => {
                 <WhatWeDo />
             </div>
             <div className="snap-always snap-start bg-white dark:bg-[#1F1F1F] py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-                <h1 className="text-center text-4xl font-extrabold text-black dark:text-white mb-8">
-                    Our Mission
-                </h1>
-
                 <div className="flex flex-wrap -mx-8">
                     <div className="w-full md:w-1/2 px-8">
-                        <h2 className="text-2xl font-semibold text-black dark:text-white mb-4 text-left">
-                            Subheading
+                        <h2 className="flex justify-center py-5 dark:text-[#46c8ff] text-[#0468BF] sm:py-10 font-extralight sm:font-light text-xl sm:text-4xl">
+                            Our Mission
                         </h2>
-                        <p className="text-black dark:text-white text-left">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                        <p className="pl-10 text-black dark:text-white text-left text-xl leading-loose">
+                            Empowering the hearing-impaired community, our note-taking app seamlessly transcribes audio into text, revolutionizing the way you capture and organize your thoughts. Join us in making communication more accessible and efficient for all.
                         </p>
                     </div>
                     <div className="w-full md:w-1/2 px-8 mb-8 md:mb-0">
                         <Image
                             src="/documents.png"
                             alt="Description of image"
-                            width={500}
-                            height={500}
+                            width={400}
+                            height={400}
                             className="rounded-lg dark:hidden"
                         />
                         <Image
                             src="/documents-dark.png"
                             alt="Description of image"
-                            width={500}
-                            height={500}
+                            width={400}
+                            height={400}
                             className="rounded-lg hidden dark:block"
                         />
                     </div>
@@ -103,7 +98,7 @@ export const About = () => {
                     </div>
                 </div>
             </div>*/}
-            <div className="snap-always snap-start py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div className="snap-always snap-start py-5 px-4 sm:px-6 lg:py-16 lg:px-8">
                 <Teams />
             </div>
 

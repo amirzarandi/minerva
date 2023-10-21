@@ -4,8 +4,8 @@ function Index() {
         <div className="">
             <div className="container flex justify-center mx-auto pt-16">
                 <div>
-                    <h1 className="xl:text-4xl text-3xl text-center text-white font-light pb-6 sm:w-4/6 w-5/6 mx-auto">
-                        The Talented People Behind Minerva
+                    <h1 className="xl:text-4xl text-3xl text-center text-black dark:text-white font-light pb-6 sm:w-4/6 w-5/6 mx-auto">
+                        The Talent Behind Minerva
                     </h1>
                 </div>
             </div>
@@ -25,13 +25,13 @@ function Index() {
                                 </div>
                                 <div className="px-6 my-16">
                                     <div className="font-bold text-3xl text-center pb-1">
-                                        dev
+                                        Developer 1
                                     </div>
-                                    <p className="text-white text-sm text-center">
-                                        dev
+                                    <p className="text-black dark:text-white text-sm text-center">
+                                        Harvard University
                                     </p>
-                                    <p className="text-center text-white text-base pt-3 font-normal">
-                                        dev
+                                    <p className="text-center text-black dark:text-white text-base pt-3 font-normal">
+                                        I am a developer!
                                     </p>
                                 </div>
                             </div>
@@ -48,10 +48,14 @@ function Index() {
                                     </div>
                                 </div>
                                 <div className="px-6 my-16">
-                                    <div className="font-bold text-3xl text-center pb-1">dev</div>
-                                    <p className="text-white text-sm text-center">dev</p>
-                                    <p className="text-center text-white text-base pt-3 font-normal">
-                                        dev
+                                    <div className="font-bold text-3xl text-center pb-1">
+                                        Developer 2
+                                    </div>
+                                    <p className="text-black dark:text-white text-sm text-center">
+                                        Harvard University
+                                    </p>
+                                    <p className="text-center text-black dark:text-white text-base pt-3 font-normal">
+                                        I am a developer!
                                     </p>
                                 </div>
                             </div>
@@ -68,12 +72,14 @@ function Index() {
                                     </div>
                                 </div>
                                 <div className="px-6 my-16">
-                                    <div className="font-bold text-3xl text-center pb-1">Dev</div>
-                                    <p className="text-white text-sm text-center">
-                                        Dev
+                                    <div className="font-bold text-3xl text-center pb-1">
+                                        Developer 3
+                                    </div>
+                                    <p className="text-black dark:text-white text-sm text-center">
+                                        Harvard University
                                     </p>
-                                    <p className="text-center text-white text-base pt-3 font-normal">
-                                        Dev
+                                    <p className="text-center text-black dark:text-white text-base pt-3 font-normal">
+                                        I am a developer!
                                     </p>
                                 </div>
                             </div>
@@ -91,13 +97,13 @@ function Index() {
                                 </div>
                                 <div className="px-6 my-16">
                                     <div className="font-bold text-3xl text-center pb-1">
-                                        dev
+                                        Developer 4
                                     </div>
-                                    <p className="text-white text-sm text-center">
-                                        dev
+                                    <p className="text-black dark:text-white text-sm text-center">
+                                        Harvard University
                                     </p>
-                                    <p className="text-center text-white text-base pt-3 font-normal">
-                                        dev
+                                    <p className="text-center text-black dark:text-white text-base pt-3 font-normal">
+                                        I am a developer!
                                     </p>
                                 </div>
                             </div>
