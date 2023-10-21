@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 663.56 663.56">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Glitten-Regular, Glitten;
+        font-size: 478.12px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #191919;
+      }
+
+      .cls-3, .cls-2 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="_1500_x_1500_px_Logo_2" data-name="1500 x 1500 px Logo 2">
+    <g id="Text">
+      <rect class="cls-3" width="663.56" height="663.56"/>
+      <rect class="cls-2" x="117.05" y="416.35" width="66.2" height="34.37"/>
+      <rect class="cls-2" x="124.83" y="305" width="50.63" height="50.63" transform="translate(-193.02 212.45) rotate(-46.6)"/>
+      <rect class="cls-2" x="117.05" y="387.87" width="66.2" height="20.55"/>
+      <text class="cls-1" transform="translate(191.4 450.12) scale(.82 1)"><tspan x="0" y="0">m</tspan></text>
+    </g>
+  </g>
+</svg>
