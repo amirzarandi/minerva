@@ -55,7 +55,7 @@ export const About = () => {
                 <div className="flex flex-wrap -mx-8">
                     <div className="w-full md:w-1/2 px-8">
                         <h2 className="font-custom flex justify-center py-5 dark:text-[#46c8ff] text-[#0468BF] sm:py-10 font-extralight sm:font-light text-xl sm:text-4xl">
-                            Minerva's Mission
+                            Minerva&apos;s Mission
                         </h2>
                         <p className="pl-10 text-black dark:text-white text-left text-xl leading-loose">
                             Empowering the hearing-impaired community, our note-taking app seamlessly transcribes audio into text, revolutionizing the way you capture and organize your thoughts. Aptly named after the Roman Goddess, Minerva, known for her wisdom.
