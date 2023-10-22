@@ -41,9 +41,16 @@ export const AudioControl = () => {
                     style={{ width: sidebarWidth }}
                     className="h-screen flex flex-col">
                     <div className="bg-secondary h-full">
-                        <h1 className="text-2xl flex items-center text-sm p-3 w-full font-medium hover:bg-primary/5">Minerva Transcription</h1>
-                        <div className="bg-gray-200 dark:bg-stone-700 h-px mt-2 mb-2"></div> {/* Divider */}
+                        <h1 className="font-custom text-xl px-6 flex items-center text-sm p-3 w-full font-medium hover:bg-primary/5">Minerva Transcription</h1>
+                        <div className="bg-gray-200 dark:bg-stone-700 h-px mt-2 mb-2"></div>
+                        <p className="px-6 text-m flex items-center text-sm p-3 w-full font-normal">Click the microphone icon to transcribe your audio. <br /><br />Once you end your transcription, your note will recieve a version of the transcript cleaned up by AI.</p>
+                        <MicrophoneComponent />
+                        <div className="bg-gray-200 dark:bg-stone-700 h-px mt-10 mb-2"></div>
+                        <div>
+                            <h1></h1>
+                        </div>
                     </div>
+
                 </aside>
                 <button
                     onClick={toggleSidebar}
@@ -51,7 +58,6 @@ export const AudioControl = () => {
                     className="absolute top-0 mt-2 p-2 text-black dark:text-white">
                     {isCollapsed ? <ChevronsRight className="h-6 w-6 mx-2" /> : <ChevronsLeft className="h-6 w-6 mx-2" />}
                 </button>
-                <MicrophoneComponent />
             </div>
         </div>
     )

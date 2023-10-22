@@ -1,4 +1,4 @@
-"use client";
+{/*"use client";
 
 import { useConvexAuth } from "convex/react";
 import { ArrowRight } from "lucide-react";
@@ -18,10 +18,12 @@ export const Heading = () => {
         Minerva is the connected workspace where <br />
         better, faster work happens.
       </h3>
-      <Link href="/documents">
-        Enter Minerva
-        <ArrowRight className="h-4 w-4 ml-2" />
+      <Link href="/documents" passHref>
+        <Button className="flex items-center space-x-2">
+          <span>Enter Minerva</span>
+        </Button>
       </Link>
     </div>
   )
 }
+*/}

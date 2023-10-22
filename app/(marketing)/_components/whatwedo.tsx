@@ -27,12 +27,12 @@ const WhatWeDo = () => {
     ];
     return (
         <div className="">
-            <h1 className="flex justify-center py-5 sm:py-10 font-extralight sm:font-light text-xl sm:text-4xl">
+            <h1 className="font-custom flex justify-center py-5 sm:py-10 font-extralight sm:font-light text-xl sm:text-4xl">
                 The Innovation Behind Minerva
             </h1>
             <div className="sm:flex justify-evenly items-center">
                 {innovationData.map((data) => (
-                    <div className="py-5 px-4 sm:py-0 sm:px-6" key={data.title}>  {/* Adjusted here */}
+                    <div className="py-5 px-4 sm:py-0 sm:px-6" key={data.title}>  
                         <InnovationCard
                             imgUrl={data.img}
                             title={data.title}

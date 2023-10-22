@@ -15,23 +15,45 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import Image from "next/image";
+import BigLogoBlack from "../../../public/biglogoblack.png"
+import BigLogo from "../../../public/biglogo.png"
+import Link from "next/link";
 
 export const UserItem = () => {
   const { user } = useUser();
 
   return (
     <DropdownMenu>
+      <div className="flex justify-center items-center mb-2 px-10 pt-5"> 
+        <Link className="flex items-center" href="/">
+          <Image
+            src={BigLogoBlack}
+            height="100"
+            width="100"
+            alt="Logo"
+            className="dark:hidden"
+          />
+          <Image
+            src={BigLogo}
+            height="100"
+            width="100"
+            alt="Logo"
+            className="hidden dark:block"
+          />
+        </Link>
+      </div>
       <DropdownMenuTrigger asChild>
-        <div role="button" className="flex items-center text-sm p-3 w-full hover:bg-primary/5">
-          <div className="gap-x-2 flex items-center max-w-[150px]">
+        <div role="button" className="flex items-center text-sm p-3 w-full hover:bg-primary/5 flex-col"> 
+          <div className="gap-x-2 flex items-center max-w-[200px]"> 
             <Avatar className="h-5 w-5">
               <AvatarImage src={user?.imageUrl} />
             </Avatar>
             <span className="text-start font-medium line-clamp-1">
               {user?.username}&apos;s Minerva
             </span>
+            <ChevronsLeftRight className="rotate-90 ml-2 text-muted-foreground h-4 w-4 mt-2" /> 
           </div>
-          <ChevronsLeftRight className="rotate-90 ml-2 text-muted-foreground h-4 w-4" />
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent
@@ -63,7 +85,6 @@ export const UserItem = () => {
             Log out
           </SignOutButton>
         </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
+      </DropdownMenuContent>    </DropdownMenu>
   )
 }

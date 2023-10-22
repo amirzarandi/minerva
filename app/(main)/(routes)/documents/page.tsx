@@ -37,7 +37,7 @@ const DocumentsPage = () => {
         To take notes with our <span className="text-lg font-normal">speech-to-text transcription</span> feature, consult the right panel.
       </p>
       <p className="text-lg font-extralight">
-        Create a <span className="text-lg font-normal">new note</span> or folder in the main menu.
+        Create a <span className="text-lg font-normal">new note</span> in the menu on the left.
       </p>
       <Image
         src="/computer.png"

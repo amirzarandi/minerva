@@ -154,7 +154,7 @@ export const Navigation = () => {
         </div>
         <div>
           <UserItem />
-          <div className="bg-gray-200 dark:bg-stone-700 h-px mt-2 mb-2"></div> {/* Divider */}
+          <div className="bg-gray-200 dark:bg-stone-700 h-px mt-2 mb-2"></div> 
           <Item
             label="Search"
             icon={Search}
@@ -172,7 +172,7 @@ export const Navigation = () => {
             icon={PlusCircle}
           />
         </div>
-        <div className="bg-gray-200 dark:bg-stone-700 mt-2 h-px"></div> {/* Divider */}
+        <div className="bg-gray-200 dark:bg-stone-700 mt-2 h-px"></div> 
 
         <div className="mt-4">
           <DocumentList />
@@ -181,7 +181,7 @@ export const Navigation = () => {
             icon={Plus}
             label="Add a page"
           />
-          <div className="bg-gray-200 dark:bg-stone-700 h-px mt-2 mb-2"></div> {/* Divider */}
+          <div className="bg-gray-200 dark:bg-stone-700 h-px mt-2 mb-2"></div> 
 
           <Popover>
             <PopoverTrigger className="w-full mt-4">

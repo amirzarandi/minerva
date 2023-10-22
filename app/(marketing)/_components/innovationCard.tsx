@@ -7,7 +7,7 @@ const InnovationCard: React.FC<InnovationCardProps> = ({
     description,
 }) => {
     return (
-        <div className="px-6 max-w-md h-auto rounded-lg">  {/* Adjusted here */}
+        <div className="px-6 max-w-md h-auto rounded-lg"> 
             <div className="flex justify-center rounded-full">
                 <img
                     src={imgUrl}

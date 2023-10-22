@@ -20,7 +20,7 @@ export const MicrophoneComponent = () => {
   // Reference to store the SpeechRecognition instance
   const recognitionRef = useRef<any>(null);
 
-  // Function to start recording
+  // Function to start recording 
   const startRecording = () => {
     setIsRecording(true);
     // Create a new SpeechRecognition instance and configure it
@@ -73,16 +73,16 @@ export const MicrophoneComponent = () => {
 
   // Render the microphone component with appropriate UI based on recording state
   return (
-    <div className="flex items-center justify-center h-screen w-full">
-      <div className="w-9/12">
+    <div className="flex items-center justify-center h-200 w-200">
+      <div className="w-full">
         {(isRecording || transcript) && (
-          <div className="w-full max-w-md m-auto rounded-md border p-4 bg-white">
+          <div className="w-4/5 h-1/2 m-auto rounded-md border p-4 bg-white dark:bg-stone-700">
             <div className="flex-1 flex w-full justify-between">
-              <div className="space-y-2">
-                <p className="text-lg font-medium leading-none">
+              <div className="space-y-1">
+                <p className="text-sm font-bold leading-none dark:text-white">
                   {recordingComplete ? "Recorded" : "Recording"}
                 </p>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-muted-foreground dark:text-stone-200">
                   {recordingComplete
                     ? "Thanks for talking."
                     : "Start speaking..."}
@@ -94,8 +94,8 @@ export const MicrophoneComponent = () => {
             </div>
 
             {transcript && (
-              <div className="border rounded-md p-2 mt-4">
-                <p className="text-black mb-0">{transcript}</p>
+              <div className="border dark:bg-stone-800 rounded-md p-2 h-80 mt-4 min-h-full">
+                <p className="mb-0 dark:text-stone-100 text-sm">{transcript}</p>
               </div>
             )}
           </div>
