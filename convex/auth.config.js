@@ -1,3 +1,4 @@
+/* trunk-ignore(eslint/import/no-anonymous-default-export) */
 export default {
     providers: [
         {
