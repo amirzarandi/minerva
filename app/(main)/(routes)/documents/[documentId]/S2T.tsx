@@ -74,15 +74,15 @@ export const MicrophoneComponent = () => {
   // Render the microphone component with appropriate UI based on recording state
   return (
     <div className="flex items-center justify-center h-screen w-full">
-      <div className="w-full">
+      <div className="w-9/12">
         {(isRecording || transcript) && (
-          <div className="w-1/4 m-auto rounded-md border p-4 bg-white">
+          <div className="w-full max-w-md m-auto rounded-md border p-4 bg-white">
             <div className="flex-1 flex w-full justify-between">
-              <div className="space-y-1">
-                <p className="text-sm font-medium leading-none">
+              <div className="space-y-2">
+                <p className="text-lg font-medium leading-none">
                   {recordingComplete ? "Recorded" : "Recording"}
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-gray-600">
                   {recordingComplete
                     ? "Thanks for talking."
                     : "Start speaking..."}
@@ -94,22 +94,22 @@ export const MicrophoneComponent = () => {
             </div>
 
             {transcript && (
-              <div className="border rounded-md p-2 h-fullm mt-4">
-                <p className="mb-0">{transcript}</p>
+              <div className="border rounded-md p-2 mt-4">
+                <p className="text-black mb-0">{transcript}</p>
               </div>
             )}
           </div>
         )}
 
-        <div className="flex items-center w-full">
+        <div className="flex items-center justify-center w-full mt-4">
           {isRecording ? (
             // Button for stopping recording
             <button
               onClick={handleToggleRecording}
-              className="mt-10 m-auto flex items-center justify-center bg-red-400 hover:bg-red-500 rounded-full w-20 h-20 focus:outline-none"
+              className="m-auto flex items-center justify-center bg-red-400 hover:bg-red-500 rounded-full w-16 h-16 focus:outline-none"
             >
               <svg
-                className="h-12 w-12 "
+                className="h-8 w-8"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -120,12 +120,12 @@ export const MicrophoneComponent = () => {
             // Button for starting recording
             <button
               onClick={handleToggleRecording}
-              className="mt-10 m-auto flex items-center justify-center bg-blue-400 hover:bg-blue-500 rounded-full w-20 h-20 focus:outline-none"
+              className="m-auto flex items-center justify-center bg-blue-400 hover:bg-blue-500 rounded-full w-16 h-16 focus:outline-none"
             >
               <svg
                 viewBox="0 0 256 256"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-12 h-12 text-white"
+                className="w-8 h-8 text-white"
               >
                 <path
                   fill="currentColor" // Change fill color to the desired color
