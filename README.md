@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Minerva
+
+## Introduction
+
+Welcome to **Minerva**, a revolutionary note-taking platform specifically tailored for individuals with hearing loss. Born out of the creative minds participating in HackHarvard 2023, our mission is to bridge the communication gap and provide an inclusive digital space for everyone.
+
+## Features
+
+- **Intuitive Interface**: Easily jot down, organize, and access your notes. Whether it's a checklist, a long-form document, or a simple reminder, our platform is designed to be user-friendly and adaptable to your needs.
+
+- **Built-in Speech-to-Text**: With a special focus on our community with hearing loss, Minerva incorporates cutting-edge technology that transcribes real-time speech into written text. Simply activate your device's microphone, and watch spoken words seamlessly appear on your note.
+
+- **Highly Customizable**: Minerva recognizes that everyone's note-taking style is unique. Customize your workspace to your heart's content.
+
+- **Cloud Sync**: Keep your notes synchronized across all devices, and never fear losing a single word.
 
 ## Getting Started
 
-First, run the development server:
+1. Visit [minerva-app.co](https://minerva-app.co/) to sign up or log in.
+2. Familiarize yourself with the intuitive dashboard.
+3. Start your first note or explore the platform's various features.
+4. Check out the built-in tutorials or consult the readme for any assistance.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Contribution & Feedback
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Being a project born out of a hackathon, we're constantly looking to improve and evolve. Your feedback is invaluable! If you'd like to contribute or have any suggestions, reach out to our team or raise an issue on our GitHub page.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Acknowledgments
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+A big shoutout to the entire team at HackHarvard 2023 and all our contributors. Together, we're making the digital space more inclusive one note at a time.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Join us on this journey and make note-taking a breeze with **Minerva**! 🚀
