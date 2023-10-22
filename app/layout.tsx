@@ -21,8 +21,8 @@ export const metadata: Metadata = {
       },
       {
         media: "(prefers-color-scheme: dark)",
-        url: "/logo-dar.svg",
-        href: "/logo-dark.svg",
+        url: "/whitenblack.svg",
+        href: "/transparent.svg",
       },
     ],
   },
