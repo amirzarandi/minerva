@@ -29,19 +29,15 @@ export const MicrophoneComponent = () => {
     recognitionRef.current.interimResults = true;
 
     // Event handler for speech recognition results
-    // Event handler for speech recognition results
     recognitionRef.current.onresult = (event: any) => {
       const { transcript } = event.results[event.results.length - 1][0];
 
-      // Log the recognition results and update the transcript state
-      console.log(event.results);
+    
+      // Update the transcript state by concatenating the new transcript
       setTranscript(transcript);
-     
+      console.log('transcript:',transcript)
     };
 
-
-    // Start the speech recognition
-    recognitionRef.current.start();
   };
 
   // Cleanup effect when the component unmounts
@@ -94,15 +90,15 @@ export const MicrophoneComponent = () => {
                 <div className="rounded-full w-4 h-4 bg-red-400 animate-pulse" />
               )}
             </div>
-
+  
             {transcript && (
-              <div className="border rounded-md p-2 h-fullm mt-4">
+              <div className="border rounded-md p-2 h-full mt-4">
                 <p className="text-black mb-0">{transcript}</p>
               </div>
             )}
           </div>
         )}
-
+  
         <div className="flex items-center w-full">
           {isRecording ? (
             // Button for stopping recording
@@ -140,4 +136,4 @@ export const MicrophoneComponent = () => {
       </div>
     </div>
   );
-}
+          }
