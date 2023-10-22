@@ -31,7 +31,7 @@ export const About = () => {
                 </h1>
 
                 <h3 className="text-base sm:text-xl md:text-2xl font-light">
-                    Minerva is the connected workspace where <br />
+                    Minerva is the accessible workspace where <br />
                     better, faster work happens.
                 </h3>
                 <Link href="/documents" >
@@ -44,7 +44,7 @@ export const About = () => {
             <div className="snap-always snap-start max-w-3xl space-y-4">
                 <Heroes />
             </div>
-            <div className="bg-gray-500 dark:bg-stone-700 mt-2 h-px"></div> {/* Divider */}
+            <div className="bg-gray-500 dark:bg-stone-700 mt-2 h-px"></div>
 
 
             <div className="snap-always snap-start max-w-3xl space-y-4">
@@ -53,11 +53,11 @@ export const About = () => {
             <div className="snap-always snap-start bg-stone-50 dark:bg-[#1F1F1F] py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
                 <div className="flex flex-wrap -mx-8">
                     <div className="w-full md:w-1/2 px-8">
-                        <h2 className="flex justify-center py-5 dark:text-[#46c8ff] text-[#0468BF] sm:py-10 font-extralight sm:font-light text-xl sm:text-4xl">
-                            Our Mission
+                        <h2 className="font-custom flex justify-center py-5 dark:text-[#46c8ff] text-[#0468BF] sm:py-10 font-extralight sm:font-light text-xl sm:text-4xl">
+                            Minerva's Mission
                         </h2>
                         <p className="pl-10 text-black dark:text-white text-left text-xl leading-loose">
-                            Empowering the hearing-impaired community, our note-taking app seamlessly transcribes audio into text, revolutionizing the way you capture and organize your thoughts. Join us in making communication more accessible and efficient for all.
+                            Empowering the hearing-impaired community, our note-taking app seamlessly transcribes audio into text, revolutionizing the way you capture and organize your thoughts. Aptly named after the Roman Goddess, Minerva, known for her wisdom.
                         </p>
                     </div>
                     <div className="w-full md:w-1/2 px-8 mb-8 md:mb-0">

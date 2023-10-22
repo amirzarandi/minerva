@@ -22,27 +22,29 @@ export const Navbar = () => {
         scrolled && "border-b shadow-sm"
       )}
     >
-      <div className="hidden md:flex justify-between items-center flex-grow"> {/* Use justify-between */}
+      <div className="hidden md:flex justify-between items-center flex-grow">
         {isLoading && <Spinner />}
         {!isAuthenticated && !isLoading && (
-          <div className="flex items-center justify-between w-full"> {/* Align items and justify to the right */}
-            <div className="flex items-center"> {/* Align items to the center */}
-              <Image
-                src={BigLogoBlack}
-                height="50"
-                width="200"
-                alt="Logo"
-                className="dark:hidden"
-              />
-              <Image
-                src={BigLogo}
-                height="50"
-                width="200"
-                alt="Logo"
-                className="hidden dark:block"
-              />
+          <div className="flex items-center justify-between w-full">
+            <div className="flex items-center">
+              <Link href="/" className="cursor-pointer">
+                <Image
+                  src={BigLogoBlack}
+                  height="50"
+                  width="200"
+                  alt="Logo"
+                  className="dark:hidden"
+                />
+                <Image
+                  src={BigLogo}
+                  height="50"
+                  width="200"
+                  alt="Logo"
+                  className="hidden dark:block"
+                />
+              </Link>
             </div>
-            <div className="flex items-center space-x-4"> {/* Add spacing between elements */}
+            <div className="cursor-pointer flex items-center space-x-4">
               <ModeToggle />
               <SignInButton mode="modal">
                 <Button variant="ghost" size="sm">
@@ -58,8 +60,8 @@ export const Navbar = () => {
           </div>
         )}
         {isAuthenticated && !isLoading && (
-          <div className="flex items-center justify-between w-full"> {/* Align items and justify to the right */}
-            <div className="flex items-center"> {/* Align items to the center */}
+          <div className="flex items-center justify-between w-full">
+            <div className="flex items-center">
               <Image
                 src={BigLogoBlack}
                 height="50"
@@ -75,7 +77,7 @@ export const Navbar = () => {
                 className="hidden dark:block"
               />
             </div>
-            <div className="flex items-center space-x-4"> {/* Add spacing between elements */}
+            <div className="flex items-center space-x-4">
               <ModeToggle />
               <Button variant="ghost" size="sm" asChild>
                 <Link href="/documents">
