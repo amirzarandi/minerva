@@ -14,6 +14,8 @@ Welcome to **Minerva**, a revolutionary note-taking platform specifically tailor
 
 - **Cloud Sync**: Keep your notes synchronized across all devices, and never fear losing a single word.
 
+- **Collaborative Features**: Share notes that can be accessible from anywhere, by anyone.
+
 ## Getting Started
 
 1. Visit [minerva-app.co](https://minerva-app.co/) to sign up or log in.
