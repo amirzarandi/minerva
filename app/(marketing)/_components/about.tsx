@@ -36,7 +36,6 @@ export const About = () => {
                 </h3>
                 <Link href="/documents" >
                     Enter Minerva
-                    <ArrowRight className="h-4 w-4 ml-2" />
                 </Link>
             </div>
             <div className="snap-always snap-start max-w-3xl space-y-4">
