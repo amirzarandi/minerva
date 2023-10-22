@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
 import { ChevronsLeft, ChevronsRight } from "lucide-react";
+import { MicrophoneComponent } from "../(routes)/documents/[documentId]/S2T";
 
 export const AudioControl = () => {
     const isMobile = useMediaQuery("(max-width: 768px)");
@@ -50,6 +51,7 @@ export const AudioControl = () => {
                     className="absolute top-0 mt-2 p-2 text-black dark:text-white">
                     {isCollapsed ? <ChevronsRight className="h-6 w-6 mx-2" /> : <ChevronsLeft className="h-6 w-6 mx-2" />}
                 </button>
+                <MicrophoneComponent />
             </div>
         </div>
     )
