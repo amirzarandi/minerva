@@ -88,3 +88,9 @@ body,
   font-weight: normal;
   font-style: normal;
 }
+
+.content-push-down {
+  position: relative;
+  top: 50px;
+  /* This value should match the height of your error banner */
+}

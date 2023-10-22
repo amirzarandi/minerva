@@ -18,10 +18,10 @@ export const Heading = () => {
         Minerva is the connected workspace where <br />
         better, faster work happens.
       </h3>
-      <Button>
+      <Link href="/documents">
         Enter Minerva
         <ArrowRight className="h-4 w-4 ml-2" />
-      </Button>
+      </Link>
     </div>
   )
 }

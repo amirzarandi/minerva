@@ -2,7 +2,7 @@ import React from 'react';
 function Index() {
     return (
         <div className="">
-            <div className="container flex justify-center mx-auto pt-16">
+            <div className="container flex justify-center mx-auto pt-4">
                 <div>
                     <h1 className="xl:text-4xl text-3xl text-center text-black dark:text-white font-light pb-6 sm:w-4/6 w-5/6 mx-auto">
                         The Talent Behind Minerva

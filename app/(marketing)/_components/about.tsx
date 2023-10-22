@@ -6,6 +6,8 @@ import { Heroes } from './heroes';
 import Image from 'next/image';
 import WhatWeDo from './whatwedo';
 import Teams from './teams';
+import Link from "next/link";
+
 
 export const About = () => {
     return (
@@ -32,18 +34,21 @@ export const About = () => {
                     Minerva is the connected workspace where <br />
                     better, faster work happens.
                 </h3>
-                <Button >
+                <Link href="/documents" >
                     Enter Minerva
                     <ArrowRight className="h-4 w-4 ml-2" />
-                </Button>
+                </Link>
             </div>
             <div className="snap-always snap-start max-w-3xl space-y-4">
                 <Heroes />
             </div>
+            <div className="bg-gray-500 dark:bg-stone-700 mt-2 h-px"></div> {/* Divider */}
+
+
             <div className="snap-always snap-start max-w-3xl space-y-4">
                 <WhatWeDo />
             </div>
-            <div className="snap-always snap-start bg-white dark:bg-[#1F1F1F] py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div className="snap-always snap-start bg-stone-50 dark:bg-[#1F1F1F] py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
                 <div className="flex flex-wrap -mx-8">
                     <div className="w-full md:w-1/2 px-8">
                         <h2 className="flex justify-center py-5 dark:text-[#46c8ff] text-[#0468BF] sm:py-10 font-extralight sm:font-light text-xl sm:text-4xl">
@@ -55,14 +60,14 @@ export const About = () => {
                     </div>
                     <div className="w-full md:w-1/2 px-8 mb-8 md:mb-0">
                         <Image
-                            src="/documents.png"
+                            src="/writing.png"
                             alt="Description of image"
                             width={400}
                             height={400}
                             className="rounded-lg dark:hidden"
                         />
                         <Image
-                            src="/documents-dark.png"
+                            src="/writing-white.png"
                             alt="Description of image"
                             width={400}
                             height={400}
@@ -71,37 +76,9 @@ export const About = () => {
                     </div>
                 </div>
             </div>
-            {/*<div className="snap-always snap-start py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-                <h1 className="text-center text-4xl font-extrabold text-white mb-8">
-                    Minerva
-                </h1>
-
-                <div className="flex flex-wrap -mx-8">
-                    <div className="w-full md:w-1/2 px-8 mb-8 md:mb-0">
-                        <Image
-                            src="/reading-dark.png"
-                            alt="Description of image"
-                            width={500}
-                            height={500}
-                            className="rounded-lg"
-                        />
-                    </div>
-
-                    <div className="w-full md:w-1/2 px-8">
-                        <h2 className="text-2xl font-semibold text-white mb-4 text-left">
-                            Subheading
-                        </h2>
-                        <p className="text-white text-left">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-                        </p>
-                    </div>
-                </div>
-            </div>*/}
             <div className="snap-always snap-start py-5 px-4 sm:px-6 lg:py-16 lg:px-8">
                 <Teams />
             </div>
-
         </div>
     )
 }
